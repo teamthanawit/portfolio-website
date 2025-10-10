@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLOG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Prompt", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f3f4f6, #e5e7eb, #fefefe);
+      min-height: 100vh;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: linear-gradient(90deg, #000000, #434343);
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #ffd700;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .profile-section {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      padding: 5rem 8%;
+      align-items: center;
+      background: white;
+      margin: 2rem auto;
+      max-width: 1200px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .profile-section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    .profile-section img {
+      width: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      transition: transform 0.5s ease;
+    }
+
+    .profile-section img:hover {
+      transform: scale(1.07) rotate(1deg);
+    }
+
+    .profile-text {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #444;
+    }
+
+    .profile-text h2 {
+      color: #222;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+      border-left: 6px solid #ffd700;
+      padding-left: 12px;
+    }
+
+    .profile-text p {
+      padding-right: 1rem;
+    }
+
+    .profile-section:nth-child(even) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 992px) {
+      .profile-section {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .profile-text h2 {
+        border-left: none;
+        padding-left: 0;
+      }
+
+      .profile-text p {
+        padding: 0 1rem;
+      }
+
+      nav ul {
+        gap: 1.5rem;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+      <ul>
+          <li><a href="index.html">PROFILE</a></li>
+          <li><a href="education.html">EDUCATION</a></li>
+          <li><a href="certificate.html">CERTIFICATES</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+  </nav>
+
+  <section class="profile-section">
+      <img src="img/study.jpeg" alt="ทีม">
+      <div class="profile-text">
+          <h2>สวัสดีครับ</h2>
+          <p>ผมชื่อทีม อายุ 21 ปี ปัจจุบันกำลังศึกษาอยู่ที่ มจพ. ปราจีนบุรี กิจกรรมยามว่างคือเล่นเกมและดูฟุตบอล เป็นคนสนุก ร่าเริง </p>
+      </div>
+  </section>
+
+  <section class="profile-section">
+      <div class="profile-text">
+          
+          <p>ชอบอยู่แบบธรรมชาติ ปลูกต้นไม้ อากาศจะได้ปลอดโปร่ง ต้นไม้ที่โตเร็วที่สุดคือ.. ต้นที่ปลูกวันนี้</p>
+      </div>
+      <img src="img/fram.jpg" alt="ธรรมชาติ">
+  </section>
+
+  <section class="profile-section">
+      <img src="img/ปวส.jpg" alt="ปวส">
+      <div class="profile-text">
+        
+          <p>ผมเรียนจบ ปวส. ที่วิทยาลัยอีเทค จังหวัดชลบุรี สาขาเทคโนโลยีสารสนเทศ เขียนโค้ดเป็นนิดหน่อย ชอบเขียนแนวเว็บไซต์ และแอปพลิเคชั่น</p>
+      </div>
+  </section>
+
+  <section class="profile-section">
+      <div class="profile-text">
+         
+          <p>ตอนสอบติดที่มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ วิทยาเขตปราจีนบุรี คณะเทคโนโลยีและการจัดการอุตสาหกรรม สาขาเทคโนโลยีสารสนเทศ</p>
+      </div>
+      <img src="img/university.jpg" alt="มหาวิทยาลัย">
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Prompt", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f0f4ff, #ffffff, #f9f9f9);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+   
+    nav {
+      width: 100%;
+      background: linear-gradient(90deg, #000000, #434343);
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .menu ul {
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .menu a::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #ffd700;
+      transition: width 0.3s ease;
+    }
+
+    .menu a:hover {
+      color: #ffd700;
+    }
+
+    .menu a:hover::after {
+      width: 100%;
+    }
+
+    
+    .contact-container {
+      margin-top: 4rem;
+      text-align: center;
+      background: white;
+      padding: 3rem 4rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      width: 80%;
+      max-width: 700px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+    }
+
+    .contact-container h2 {
+      font-size: 2.2rem;
+      color: #333;
+      margin-bottom: 2rem;
+      letter-spacing: 1px;
+    }
+
+    .icons {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .icons img {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      background: #fff;
+      padding: 10px;
+    }
+
+    .icons img:hover {
+      transform: scale(1.12);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .contact-info h3 {
+      color: #444;
+      font-weight: 600;
+      margin: 0.8rem 0;
+      font-size: 1.3rem;
+      transition: color 0.3s ease;
+    }
+
+    .contact-info h3:hover {
+      color: #ff6a00;
+    }
+
+    .addr {
+      margin-top: 2rem;
+      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      background: #f9fafb;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+
+    .addr h3 {
+      font-size: 1.15rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="menu">
+      <ul>
+       <li><a href="index.html">PROFILE</a></li>
+                <li><a href="education.html">EDUCATION</a></li>
+                <li><a href="certificate.html">CERTIFICATES</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="contact-container">
+    <h2>CONTACT ME</h2>
+
+    <div class="icons">
+      <img src="img/gmail.png" alt="Gmail">
+      <img src="img/line.png" alt="Line">
+      <img src="img/เฟส.png" alt="Facebook">
+    </div>
+
+    <div class="contact-info">
+      <h3> thanawitdorbut@gmail.com</h3>
+      <h3> Line: teamzaa007</h3>
+      <h3> Facebook: Thanawit Dorbut</h3>
+    </div>
+
+    <div class="addr">
+      <h3>🏠 ที่อยู่: 199/923 ตำบลแพรกษาใหม่ อำเภอเมือง จังหวัด สมุทรปราการ 10280
